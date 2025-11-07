@@ -1,34 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HARSH</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="min-h-screen flex items-center justify-center bg-gray-100">
-        <div class="bg-white p-8 rounded shadow-md w-96">
-            <h1 class="text-2xl font-bold mb-4 text-center">About Me</h1>
-            <div class="mb-4">
-                <span class="font-semibold">Name:</span> Harsh Dhankhar
-            </div>
-            <div class="mb-4">
-                <span class="font-semibold">Roll No:</span> 17
-            </div>
-            <div class="mb-4">
-                <span class="font-semibold">Address:</span> Jhajjar, Haryana
-            </div>
-            <div class="mb-4">
-                <span class="font-semibold">Semester:</span> 5th
-            </div>
-            <div class="mb-4">
-                <span class="font-semibold">Current CGPA:</span> 7.33
-            </div>
-            <div class="mb-4">
-                <span class="font-semibold">Current Attendance:</span> 84%
-            </div>
-        </div>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Personal profile — Harsh Dhankhar" />
+        <title>Harsh Dhankhar — Profile</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="bg-gradient-to-b from-gray-50 to-white min-h-screen text-gray-800">
+        <header class="max-w-4xl mx-auto px-6 py-6">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-indigo-600 rounded-md flex items-center justify-center text-white font-bold">Hd</div>
+                    <span class="text-lg font-semibold">Harsh Dhankhar</span>
+                </div>
+                <div class="space-x-4 text-sm text-gray-600">
+                    <a href="#profile" class="hover:text-indigo-600">Profile</a>
+                    <a href="sem1.html" class="hover:text-indigo-600">Semester</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="max-w-4xl mx-auto px-6">
+            <section id="profile" class="bg-white shadow-md rounded-lg -mt-6 p-6 md:p-10">
+                <div class="flex flex-col md:flex-row items-center md:items-start">
+                    <!-- Image: user requested /myImage.gif -->
+                    <div class="flex-shrink-0 -mt-12 md:mt-0 md:mr-8">
+                        <div class="w-36 h-36 rounded-full overflow-hidden ring-4 ring-white shadow-lg mx-auto md:mx-0">
+                            <img src="/myImage.gif" alt="Profile image of Harsh" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+
+                    <div class="mt-6 md:mt-0 flex-1">
+                        <h1 class="text-2xl font-bold">About Me</h1>
+                        <p class="text-sm text-gray-600 mt-2">Student · Semester 5 · Computer Science</p>
+
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                            <div class="space-y-2">
+                                <div>
+                                    <span class="font-semibold">Name:</span> Harsh Dhankhar
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Roll No:</span> 17
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Address:</span> Jhajjar, Haryana
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <div>
+                                    <span class="font-semibold">Semester:</span> 5th
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Current CGPA:</span> 7.33
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Current Attendance:</span> 84%
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+         
+        </main>
+
+        <footer class="max-w-4xl mx-auto px-6 py-8 text-xs text-gray-500">
+            <div class="border-t pt-4">© <span id="year">2025</span> Harsh Dhankhar.</div>
+        </footer>
+
+        <script>
+            // small script to fill year
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </body>
 </html>
